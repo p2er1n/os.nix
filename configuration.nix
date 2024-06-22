@@ -24,6 +24,7 @@
     
     libinput.enable = true;
     blueman.enable = true;
+    fractalart.enable = true;
   };
 
   networking = {
