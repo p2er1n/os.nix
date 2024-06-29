@@ -121,10 +121,12 @@
     config.allowUnfree = true;
   };
 
+  virtualisation.docker.enable = true;
+  
   users.users = {
     peerin = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "audio" ];
+      extraGroups = [ "wheel" "audio" "docker" ];
       packages = with pkgs; [];
       initialPassword = "pw123";
     };
